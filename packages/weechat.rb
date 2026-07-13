@@ -11,25 +11,24 @@ class Weechat < CMake
   binary_compression 'tar.zst'
 
   binary_sha256({
-    aarch64: 'cddcd6b46fd9dd7c36a9507014684baed130371687dff6bbb950599b6631e4b3',
-     armv7l: 'cddcd6b46fd9dd7c36a9507014684baed130371687dff6bbb950599b6631e4b3',
-       i686: 'd30cac99509affc6ee1d29a4296dc5f736f523eb6af1f99db73c6163471be19a',
-     x86_64: '02955559c190e47fdf50d253934f98eb2a44377f995378d88c688a9f1d39a53c'
+    aarch64: '2845b29dc6f6fcdf743a6c80c6f74534224c63b97af9952d5a27f880557786df',
+     armv7l: '2845b29dc6f6fcdf743a6c80c6f74534224c63b97af9952d5a27f880557786df',
+       i686: 'aeb79ee1604bf1d77c4ecdb8e0e9397a919d9fd7dd927dec25c1ec466277a506',
+     x86_64: '2043b3bcb7388263db748e7434f31c2df09624912a11404ccebcdebb10473e09'
   })
 
   depends_on 'aspell' => :library
   depends_on 'bdwgc' => :library
   depends_on 'cjson' => :library
-  depends_on 'curl'
   depends_on 'curl' => :executable
   depends_on 'glibc' => :library
   depends_on 'glibc_lib' => :library
   depends_on 'gnutls' => :library
   depends_on 'guile' => :library
   depends_on 'libgcrypt' => :library
+  depends_on 'libiconv' => :library
   depends_on 'libxcrypt' => :library
   depends_on 'lua' => :library
-  depends_on 'ncurses'
   depends_on 'ncurses' => :executable
   depends_on 'perl' => :library
   depends_on 'python3' => :library

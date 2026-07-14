@@ -36,27 +36,13 @@ lsbval() {
 set_trap() { trap "echo_error 'An error occured during the installation using Chromebrew installer ${CREW_INSTALLER_VERSION} :/'" ERR; }
 set_trap
 
-# Check if the script is being run as root.
-if [ "${EUID}" == "0" ]; then
-  echo_error "Chromebrew should not be installed or run as root."
-  echo_info "Please login as 'chronos' and restart the install."
-  exit 1
-fi
-
 # Reject crostini.
 if [[ -d /opt/google/cros-containers && "${CREW_FORCE_INSTALL}" != '1' ]]; then
-  echo_error "Crostini containers are not supported by Chromebrew :/"
+  echo_error "Crostini containers are not supported by Decbrew :/"
   echo_info "Run 'CREW_FORCE_INSTALL=1 bash <(curl -Ls git.io/vddgY) && . ~/.bashrc' to perform install anyway"
   exit 1
 fi
 
-# Reject non-stable Chrome OS channels.
-if [ -f /etc/lsb-release ]; then
-  if [[ ! "$(lsbval CHROMEOS_RELEASE_TRACK)" =~ stable-channel && "${CREW_FORCE_INSTALL}" != '1' ]]; then
-    echo_error "The beta, dev, and canary channel are unsupported by Chromebrew."
-    echo_info "Run 'CREW_FORCE_INSTALL=1 bash <(curl -Ls git.io/vddgY) && . ~/.bashrc' to perform install anyway."
-    exit 1
-  fi
   CHROMEOS_RELEASE_CHROME_MILESTONE="$(lsbval CHROMEOS_RELEASE_CHROME_MILESTONE)"
 else
   echo_info "Unable to detect system information, installation will continue."

@@ -1,8 +1,6 @@
 #!/usr/local/bin/ruby
 # We require color here to get access to .lightred.
 require_relative '../lib/color'
-# Disallow sudo.
-abort 'Chromebrew should not be run as root.'.lightred if Process.uid.zero?
 require_relative '../lib/require_gem'
 require_gem('highline')
 # The json gem can break when upgrading from a much older version of ruby.

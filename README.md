@@ -1,6 +1,6 @@
 <div align="center">
   <img src="images/Decbrew logo.png" alt="Decbrew icon">
-  <h1>Chromebrew</h1>
+  <h1>Decbrew</h1>
   <p>The Missing Package Manager For Chrome OS</p>
 </div>
 
@@ -16,7 +16,7 @@
 
 ## Overview
 
-Chromebooks with ChromeOS run a Linux kernel. The only missing pieces to use them as full-featured Linux distro were gcc and make with their dependencies. Well, these pieces aren't missing anymore. Say hello to Chromebrew!
+Chromebooks with ChromeOS run a Linux kernel. The only missing pieces to use them as full-featured Linux distro were gcc and make with their dependencies. Well, these pieces aren't missing anymore. Say hello to Decbrew!
 
 ## Prerequisites
 
@@ -48,12 +48,12 @@ You will need a Chromebook with developer mode enabled. To do so, select your de
 ## Installation
 
 > [!IMPORTANT]
-> The beta, dev, and Canary channels are ***not*** supported and should ***not*** be used with Chromebrew. Failure to take notice of this warning will cause major issues with your Chromebrew installation.
+> The beta, dev, and Canary channels are ***not*** supported and should ***not*** be used with Decbrew. Failure to take notice of this warning will cause major issues with your Decbrew installation.
 >
 > See issue [#2890](https://github.com/chromebrew/chromebrew/issues/2890) and the [FAQ](https://github.com/chromebrew/chromebrew/wiki/FAQ) for more details.
 
 > [!WARNING]
-> On ChromeOS M117+, the Chromebrew installer will not work in `crosh` anymore due to the security changes introduced in ChromeOS M117.
+> On ChromeOS M117+, the Decbrew installer will not work in `crosh` anymore due to the security changes introduced in ChromeOS M117.
 
 Open a VT-2 terminal session with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>-></kbd> and login with the `chronos` or `root` user and password if set [above](#set_passwd). *(if you are unable to do this, please have a second look at the prerequisites and make sure your Chromebook is in developer mode)*
 
@@ -65,7 +65,7 @@ bash <(curl -L [https://bit.ly/Decbrew0installsh]) && . ~/.bashrc
 
 ## Help
 
-Please check out the [wiki](https://github.com/chromebrew/chromebrew/wiki) to find out more information about Chromebrew including helpful tips, resource links and frequently asked questions.
+Please check out the [wiki](https://github.com/chromebrew/chromebrew/wiki) to find out more information about Decbrew including helpful tips, resource links and frequently asked questions.
 
 Also please check existing [issues](https://github.com/chromebrew/chromebrew/issues) before submitting a new one.
 
@@ -104,7 +104,7 @@ Where available commands are:
 
 Available packages are listed in the [packages directory](https://github.com/chromebrew/chromebrew/tree/master/packages).
 
-Chromebrew will wipe its `BREW_DIR` (`/usr/local/tmp/crew` by default) after installation unless you pass `-k` or `--keep` when running `crew install`.
+Decbrew will wipe its `BREW_DIR` (`/usr/local/tmp/crew` by default) after installation unless you pass `-k` or `--keep` when running `crew install`.
 
 ```text
 crew install --keep [...]

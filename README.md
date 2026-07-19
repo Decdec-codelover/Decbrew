@@ -71,8 +71,8 @@ Also please check existing [issues](https://github.com/chromebrew/chromebrew/iss
 
 ## Usage
 
-```text
-crew <command> <package1> [<package2> ...]
+```bash
+Dec <command> <package1> [<package2> ...]
 ```
 
 Where available commands are:

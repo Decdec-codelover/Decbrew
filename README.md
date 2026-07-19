@@ -107,7 +107,7 @@ Available packages are listed in the [packages directory](https://github.com/chr
 Decbrew will wipe its `BREW_DIR` (`/usr/local/tmp/crew` by default) after installation unless you pass `-k` or `--keep` when running `crew install`.
 
 ```text
-crew install --keep [...]
+Dec install --keep [...]
 ```
 
 ## License

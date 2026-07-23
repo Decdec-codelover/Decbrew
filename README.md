@@ -27,7 +27,7 @@ You will need a Chromebook with developer mode enabled. To do so, select your de
 
 <a id="set_passwd" /> <!-- for reference in installation section -->
 > [!TIP]
-> Setting a password as instructed in the VT-2 login screen is recommended. It is also recommended to enable signed boot:
+> Setting a password as instructed in the VT-2 login screen is recommended. It is also recommended to enable signed boot unless you're installing another_os:
 >
 > ```bash
 > sudo chromeos-setdevpasswd
@@ -74,6 +74,10 @@ Also please check existing [issues](https://github.com/chromebrew/chromebrew/iss
 ```bash
 Dec <command> <package1> [<package2> ...]
 ```
+install another_os
+'''bash
+Dec install another_os
+'''
 
 Where available commands are:
 

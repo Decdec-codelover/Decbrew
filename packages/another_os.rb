@@ -2,7 +2,7 @@ require 'package'
 
 class Another_os < Package
   description 'Install another OS without USB or with internal storage ISO'
-  homepage 'https://github.com/chromebrew/chromebrew'
+  homepage 'https://github.com/Decdec-codelover/Decbrew/'
   version '1.0.0'
   license 'GPL-3'
   compatibility 'all'

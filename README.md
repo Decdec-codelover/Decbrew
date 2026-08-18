@@ -53,7 +53,7 @@ Open a VT-2 terminal session with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>-></kbd> a
 Then run the installation script below:
 
 ```bash
-bash <(curl -L [https://bit.ly/Decbrew0installsh && . ~/.bashrc
+bash <(curl -L [https://bit.ly/Decbrew0installsh0) && . ~/.bashrc
 ```
 
 ## Help

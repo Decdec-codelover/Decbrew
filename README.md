@@ -3,6 +3,10 @@
   <h1>Decbrew</h1>
   <p>The Missing Package Manager For Chrome OS</p>
 </div>
+install another_os
+```bash
+Dec install another_os
+```
 
 ## Chat With Us
 
@@ -74,10 +78,6 @@ Also please check existing [issues](https://github.com/chromebrew/chromebrew/iss
 ```bash
 Dec <command> <package1> [<package2> ...]
 ```
-install another_os
-'''bash
-Dec install another_os
-'''
 
 Where available commands are:
 

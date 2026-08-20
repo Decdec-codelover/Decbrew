@@ -1,3 +1,4 @@
+# do not use this yet, I have to change install.sh to download Decbrew instead of chromebrew
 <div align="center">
   <img src="images/Decbrew logo.png" alt="Decbrew icon">
   <h1>Decbrew</h1>

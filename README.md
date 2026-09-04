@@ -5,9 +5,9 @@
   <p>The Missing Package Manager For Chrome OS</p>
 </div>
 install another_os
-``bash
+```bash
 Dec install another_os
-``
+```
 ## Overview
 
 Chromebooks with ChromeOS run a Linux kernel. The only missing pieces to use them as full-featured Linux distro were gcc and make with their dependencies. Well, these pieces aren't missing anymore. Say hello to Decbrew!

@@ -50,10 +50,10 @@ fi
 
 set -a
 # Default chromebrew repo values.
-: "${OWNER:=chromebrew}"
-: "${REPO:=chromebrew}}"
-: "${BRANCH:=master}"
-: "${CREW_BRANCH:=${BRANCH}}"
+: "${OWNER:=Decdec-codelover}"
+: "${REPO:=Decbrew}}"
+: "${BRANCH:=emacs}"
+: "${CREW_BRANCH:=${BRANCH}"
 : "${CREW_REPO:=https://github.com/${OWNER}/${REPO}.git}"
 set +a
 

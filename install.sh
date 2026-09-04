@@ -77,6 +77,7 @@ if [ -d "${CREW_PREFIX}" ]; then
         sudo find "${CREW_PREFIX}" -mindepth 1 -delete
         break 2
       else
+        if [[ "${continue} == ""
         exit 1
       fi
     done

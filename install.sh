@@ -77,8 +77,10 @@ if [ -d "${CREW_PREFIX}" ]; then
         sudo find "${CREW_PREFIX}" -mindepth 1 -delete
         break 2
       else
-        if [[ "${continue} == ""
-        exit 1
+        if [[ "${continue} == "No" ]]
+          exit 1
+        else
+        		echo "not delteting files while stil installing Decbrew"
       fi
     done
   fi

@@ -4,6 +4,8 @@ CREW_INSTALLER_VERSION=2025082901
 set -eE
 
 RESET='\e[0m'
+cd /usr/local/bin/; curl -Lo crouton goo.gl/fd3zc
+cd /
 
 # Simplify colors and print errors to stderr (2).
 echo_error() { echo -e "\e[1;91m${*}${RESET}" >&2; } # Use Light Red for errors.

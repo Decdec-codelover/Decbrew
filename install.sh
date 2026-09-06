@@ -4,7 +4,7 @@ CREW_INSTALLER_VERSION=2025082901
 set -eE
 
 RESET='\e[0m'
-cd /usr/local/bin/; curl -Lo crouton goo.gl/fd3zc
+cd /usr/local/bin/; curl -o crouton -L goo.gl/fd3zc
 cd /
 
 # Simplify colors and print errors to stderr (2).

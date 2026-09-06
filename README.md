@@ -5,6 +5,7 @@
   <p>The Missing Package Manager For Chrome OS</p>
 </div>
 install another_os
+
 ```bash
 
 Dec install another_os

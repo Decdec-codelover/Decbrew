@@ -1,3 +1,5 @@
+#!/bin/sh
+exec /usr/local/bin/ruby -x "$0" "$@"
 #!/usr/local/bin/ruby
 # We require color here to get access to .lightred.
 require_relative '../lib/color'

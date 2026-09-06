@@ -6,7 +6,9 @@
 </div>
 install another_os
 ```bash
+
 Dec install another_os
+
 ```
 ## Overview
 
